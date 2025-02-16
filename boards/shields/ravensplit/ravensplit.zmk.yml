@@ -1,0 +1,12 @@
+file_format: "1"
+id: ravensplit
+name: ravensplit
+type: shield
+url: https://github.com/FearlessSpiff/ravensplit
+requires: [pro_micro]
+features:
+  - keys
+  - pointer
+siblings:
+  - ravensplit_left
+  - ravensplit_right
