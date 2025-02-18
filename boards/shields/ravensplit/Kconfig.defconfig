@@ -7,12 +7,6 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config ZMK_POINTING
-    default y
-
-config I2C
-	default y
-
 endif
 
 if SHIELD_RAVENSPLIT_RIGHT || SHIELD_RAVENSPLIT_LEFT
