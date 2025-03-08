@@ -77,7 +77,6 @@ cirque_spi: &spi0 {
         status = "okay";
         dr-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH)>;
         sensitivity = "1x";
-        rotate-90;
         x-invert;
     };
 };
