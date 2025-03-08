@@ -103,8 +103,8 @@
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
         input-processors 
-          = <&zip_temp_layer MSE 1200>
-          , <&zip_xy_scaler 2 1>;
+//          = <&zip_temp_layer MSE 1200>
+          = <&zip_xy_scaler 1 1>;
 
         scroll {
             layers = <SCRL>;
