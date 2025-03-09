@@ -7,6 +7,15 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_POINTING
+    default y
+
+config SPI
+    default y
+
+config INPUT_PINNACLE
+    default y
+
 endif
 
 if SHIELD_RAVENSPLIT_RIGHT || SHIELD_RAVENSPLIT_LEFT
