@@ -102,7 +102,7 @@
     glidepoint_listener {
         input-processors 
 //          = <&zip_temp_layer MSE 1200>
-          = <&zip_xy_scaler 1 1>;
+          = <&zip_xy_scaler 2 1>;
 
         scroll {
             layers = <SCRL>;
@@ -162,7 +162,7 @@
                 ;
         )
 
-        ZMK_MACRO(to_x1,
+        ZMK_MACRO(to_archyoga,
             wait-ms = <30>;
             tap-ms = <40>;
             bindings
@@ -223,11 +223,20 @@
                 ;
         )
 
-        ZMK_MACRO(to_ip60,
+        ZMK_MACRO(to_x1,
             wait-ms = <30>;
             tap-ms = <40>;
             bindings
                 = <&macro_tap  BT_4>
+                , <&macro_tap  &to DEF>
+                ;
+        )
+
+        ZMK_MACRO(to_ip60,
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_tap  BT_5>
                 , <&macro_tap  &to DEF>
                 ;
         )
@@ -349,9 +358,9 @@
 
         settings_layer {
             bindings = <
-                                    ________      ________  ________  BT_CLEAR          ________  &to DEF   &to M_DEF  ________
-                TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_ip60  BT_5       BT_6       ________   ________
-                TODO  ________      ________      ________  ________  EXT_ON            ________  &to_x1    &to_nca    &to_scd    &to_devvm  TODO
+                                    ________      ________  ________  BT_CLEAR          ________  &to DEF       &to M_DEF  ________
+                TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_x1        &to_ip60   BT_6       ________   ________
+                TODO  ________      ________      ________  ________  EXT_ON            ________  &to_archyoga  &to_nca    &to_scd    &to_devvm  TODO
                                                             ________  ________          ________  ________
             >;
         };
@@ -413,9 +422,9 @@
 
         mac_settings_layer {
             bindings = <
-                                    ________      ________  ________  BT_CLEAR          ________  &to DEF   &to M_DEF  ________
-                TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_ip60  BT_5       BT_6       ________   ________
-                TODO  ________      ________      ________  ________  EXT_ON            ________  &to_x1    &to_nca    &to_scd    &to_devvm  TODO
+                                    ________      ________  ________  BT_CLEAR          ________  &to DEF       &to M_DEF  ________
+                TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_x1        &to_ip60   BT_6       ________   ________
+                TODO  ________      ________      ________  ________  EXT_ON            ________  &to_archyoga  &to_nca    &to_scd    &to_devvm  TODO
                                                             ________  ________          ________  ________
             >;
         };
@@ -480,9 +489,9 @@
 
         hrz_settings_layer {
             bindings = <
-                                    ________      ________  ________  BT_CLEAR          ________  &to DEF   &to M_DEF  ________
-                TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_ip60  BT_5       BT_6       ________   ________
-                TODO  ________      ________      ________  ________  EXT_ON            ________  &to_x1    &to_nca    &to_scd    &to_devvm  TODO
+                                    ________      ________  ________  BT_CLEAR          ________  &to DEF       &to M_DEF  ________
+                TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_x1        &to_ip60      BT_6       ________   ________
+                TODO  ________      ________      ________  ________  EXT_ON            ________  &to_archyoga  &to_nca    &to_scd    &to_devvm  TODO
                                                             ________  ________          ________  ________
             >;
         };
