@@ -54,7 +54,7 @@
 #define SPACE_SYM    &lt SYM SPACE
 #define SPACE_M_SYM  &lt M_SYM SPACE
 #define SPACE_H_SYM  &lt H_SYM SPACE
-#define J_MSE        &lt MSE J
+#define V_MSE        &lt MSE V
 #define C_NAV        &lt NAV C
 #define C_M_NAV      &lt M_NAV C
 #define C_H_NAV      &lt H_NAV C
@@ -74,7 +74,7 @@
 #define ALT_R &hm LALT R
 #define CTL_I &hm LCTRL I
 #define SFT_E &hm LSHIFT E
-#define GUI_V &hm LGUI V
+#define GUI_J &hm LGUI J
 
 // home row mod right
 #define SFT_N    &hm RSHIFT N
@@ -88,7 +88,7 @@
 #define CMD_T  &hm LGUI T
 #define CTL_H  &hm RCTRL H
 #define CTL_K  &hm RCTRL K
-#define CTL_V  &hm LCTRL V
+#define CTL_J  &hm LCTRL J
 
 // mac shortcuts
 #define M_HME    &kp LG(LEFT)
@@ -312,8 +312,8 @@
         default_layer {
             bindings = <
                                  &kp L  &kp U        &kp A        &kp Q                 &kp W      &kp B      &kp D      &kp G
-               J_MSE      C_NAV  ALT_R  CTL_I        SFT_E        &kp O                 &kp M      SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
-               &kp DE_SS  GUI_V  &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA           &kp P      &kp F      &kp COMMA  &kp DOT  LGUI_K  &kp DE_Y
+               GUI_J      C_NAV  ALT_R  CTL_I        SFT_E        &kp O                 &kp M      SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
+               &kp DE_SS  V_MSE  &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA           &kp P      &kp F      &kp COMMA  &kp DOT  LGUI_K  &kp DE_Y
                                                      &mo NUM      &kp LSHFT             SPACE_SYM  &kp BSPC
              >;
         };
@@ -376,8 +376,8 @@
         mac_default_layer {
             bindings = <
                                     &kp L  &kp U        &kp A        &kp Q                    &kp W        &kp B     &kp D      &kp G
-                J_MSE      C_M_NAV  ALT_R  CMD_I        SFT_E        &kp O                    &kp M        SFT_N     CMD_T      RALT_S   LALT_H  &kp DE_Z
-                &kp DE_SS  CTL_V    &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA              &kp P        &kp F     &kp COMMA  &kp DOT  CTL_K   &kp DE_Y
+                CTL_J      C_M_NAV  ALT_R  CMD_I        SFT_E        &kp O                    &kp M        SFT_N     CMD_T      RALT_S   LALT_H  &kp DE_Z
+                &kp DE_SS  V_MSE    &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA              &kp P        &kp F     &kp COMMA  &kp DOT  CTL_K   &kp DE_Y
                                                         &mo M_NUM    &kp LSHFT                SPACE_M_SYM    &kp BSPC
              >;
         };
@@ -443,8 +443,8 @@
         hrz_default_layer {
             bindings = <
                                     &kp L  &kp U        &kp A        &kp Q                   &kp W        &kp B      &kp D      &kp G
-                J_MSE      C_H_NAV  ALT_R  CTL_I        SFT_E        &kp O                   &kp M        SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
-                &kp DE_SS  GUI_V    &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA             &kp P        &kp F      &kp COMMA  &kp DOT  LGUI_K  &kp DE_Y
+                GUI_J      C_H_NAV  ALT_R  CTL_I        SFT_E        &kp O                   &kp M        SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
+                &kp DE_SS  V_MSE    &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA             &kp P        &kp F      &kp COMMA  &kp DOT  LGUI_K  &kp DE_Y
                                                         &mo H_NUM    &kp LSHFT               SPACE_H_SYM  &kp BSPC
              >;
         };
@@ -543,6 +543,7 @@
                                                        ________  ________          ________  ________
             >;
         };
+
         // dummy layer for scrolling with trackpad
         scroll_layer {
             bindings = <
