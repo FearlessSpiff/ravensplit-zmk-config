@@ -39,10 +39,13 @@
 #define H_FN    16
 #define H_SET   17
 
+// Game
+#define GME     18
+
 // Global
-#define MSE     18
-#define SPCL    19
-#define SCRL    20
+#define MSE     19
+#define SPCL    20
+#define SCRL    21
 
 // Special shortcuts
 #define ________     &trans
@@ -358,7 +361,7 @@
 
         settings_layer {
             bindings = <
-                                    ________      ________  ________  BT_CLEAR          ________  &to DEF       &to M_DEF  ________
+                                    ________      ________  ________  BT_CLEAR          ________  &to DEF       &to M_DEF  &to GME
                 TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_x1        &to_ip60   BT_6       ________   ________
                 TODO  ________      ________      ________  ________  EXT_ON            ________  &to_archyoga  &to_nca    &to_scd    &to_devvm  TODO
                                                             ________  ________          ________  ________
@@ -422,7 +425,7 @@
 
         mac_settings_layer {
             bindings = <
-                                    ________      ________  ________  BT_CLEAR          ________  &to DEF       &to M_DEF  ________
+                                    ________      ________  ________  BT_CLEAR          ________  &to DEF       &to M_DEF  &to GME
                 TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_x1        &to_ip60   BT_6       ________   ________
                 TODO  ________      ________      ________  ________  EXT_ON            ________  &to_archyoga  &to_nca    &to_scd    &to_devvm  TODO
                                                             ________  ________          ________  ________
@@ -489,9 +492,9 @@
 
         hrz_settings_layer {
             bindings = <
-                                    ________      ________  ________  BT_CLEAR          ________  &to DEF       &to M_DEF  ________
-                TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_x1        &to_ip60      BT_6       ________   ________
-                TODO  ________      ________      ________  ________  EXT_ON            ________  &to_archyoga  &to_nca    &to_scd    &to_devvm  TODO
+                                    ________      ________  ________  BT_CLEAR          ________  &to DEF       &to M_DEF  &to GME
+                TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_x1        &to_ip60   BT_6     ________   ________
+                TODO  ________      ________      ________  ________  EXT_ON            ________  &to_archyoga  &to_nca    &to_scd  &to_devvm  TODO
                                                             ________  ________          ________  ________
             >;
         };
@@ -501,6 +504,25 @@
 
 
  
+
+
+
+
+        game_layer {
+            bindings = <
+                                 &kp L  &kp U        &kp A        &kp Q                 &kp W      &kp B     &kp D      &kp G
+               &kp J      &kp C  &kp R  &kp I        &kp E        &kp O                 &kp M      &kp N     &kp T      &kp S    &kp H  &kp DE_Z
+               &kp DE_SS  &kp V  &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA           &kp P      &kp F     &kp COMMA  &kp DOT  &kp K  &kp DE_Y
+                                                     &mo NUM      &kp LSHFT             SPACE_SYM  &kp BSPC
+             >;
+        };
+
+
+
+
+
+
+
 
 
 
