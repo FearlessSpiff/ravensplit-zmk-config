@@ -15,7 +15,7 @@ git clone https://github.com/petejohanson/cirque-input-module ~/Development/gith
 ### then init with
 
 ```bash
-source ~/Development/github/FearlessSpiff/ravensplit-zmk-config/scripts/initAndSetupBuildEnv.s
+source ~/Development/github/FearlessSpiff/ravensplit-zmk-config/scripts/initAndSetupBuildEnv.sh
 # build left
 west build -p -d build/left -b nice_nano_v2 -- -DSHIELD=ravensplit_left -DZMK_EXTRA_MODULES="/home/spiff/Development/github/petejohanson/cirque-input-module;/home/spiff/Development/github/FearlessSpiff/ravensplit-zmk-config"
 
