@@ -8,8 +8,9 @@
 paru -S python-pip
 # needed? paru -S python-pip
 paru -S zephyr-sdk-bin
-mkdir ~/Development/github/petejohanson
-git clone https://github.com/petejohanson/cirque-input-module ~/Development/github/petejohanson/cirque-input-module
+# checkout and pin zmk
+mkdir ~/Development/github/
+git clone https://github.com/AYM1607/zmk-driver-azoteq-iqs5xx ~/Development/github/AYM1607/zmk-driver-azoteq-iqs5xx
 ```
 
 ### then init with
@@ -17,9 +18,9 @@ git clone https://github.com/petejohanson/cirque-input-module ~/Development/gith
 ```bash
 source ~/Development/github/FearlessSpiff/ravensplit-zmk-config/scripts/initAndSetupBuildEnv.sh
 # build left
-west build -p -d build/left -b nice_nano_v2 -- -DSHIELD=ravensplit_left -DZMK_EXTRA_MODULES="/home/spiff/Development/github/petejohanson/cirque-input-module;/home/spiff/Development/github/FearlessSpiff/ravensplit-zmk-config"
+west build -p -d build/left -b nice_nano_v2 -- -DSHIELD=ravensplit_left -DZMK_EXTRA_MODULES="/home/spiff/Development/github/AYM1607/zmk-driver-azoteq-iqs5xx;/home/spiff/Development/github/FearlessSpiff/ravensplit-zmk-config"
 
 # build right
-west build -p -d build/right -b nice_nano_v2 -- -DSHIELD=ravensplit_right -DZMK_EXTRA_MODULES="/home/spiff/Development/github/petejohanson/cirque-input-module;/home/spiff/Development/github/FearlessSpiff/ravensplit-zmk-config"
+west build -p -d build/right -b nice_nano_v2 -- -DSHIELD=ravensplit_right -DZMK_EXTRA_MODULES="/home/spiff/Development/github/AYM1607/zmk-driver-azoteq-iqs5xx;/home/spiff/Development/github/FearlessSpiff/ravensplit-zmk-config"
 
 ```

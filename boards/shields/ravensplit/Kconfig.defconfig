@@ -10,10 +10,10 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_POINTING
     default y
 
-config SPI
+config I2C
     default y
 
-config INPUT_PINNACLE
+config INPUT_AZOTEQ_IQS5XX
     default y
 
 endif
