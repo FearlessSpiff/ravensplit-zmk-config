@@ -32,7 +32,7 @@
         natural-scroll-y;
         natural-scroll-x;
 
-        bottom-beta = <5>;
+        bottom-beta = <3>;
         stationary-threshold = <5>;
 
         switch-xy;

@@ -103,10 +103,6 @@
 
 / {
     tps65_listener {
-        input-processors
-//          = <&zip_temp_layer MSE 1200>
-          = <&zip_xy_scaler 2 1>;
-
         scroll {
             layers = <SCRL>;
             input-processors
