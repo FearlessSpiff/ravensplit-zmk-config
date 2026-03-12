@@ -15,29 +15,6 @@
         ;
 };
 
-&pinctrl {
-    /* configuration for spi0 device, default state */
-    spi0_default: spi0_default {
-        /* node name is arbitrary */
-        group1 {
-            /* main role: configure P0.20 (D3) as SPI clock, P0.11 (D7) as SPI MOSI, P0.22 (D4) as SPI MISO */
-            psels = <NRF_PSEL(SPIM_SCK, 0, 20)>,
-                    <NRF_PSEL(SPIM_MOSI, 0, 11)>,
-                    <NRF_PSEL(SPIM_MISO, 0, 22)>;
-        };
-    };
-    /* configuration for spi0 device, sleep state */
-    spi0_sleep: spi0_sleep {
-        group1 {
-            /* main role: configure P0.20 (D3) as SPI clock, P0.11 (D7) as SPI MOSI, P0.22 (D4) as SPI MISO */
-            psels = <NRF_PSEL(SPIM_SCK, 0, 20)>,
-                    <NRF_PSEL(SPIM_MOSI, 0, 11)>,
-                    <NRF_PSEL(SPIM_MISO, 0, 22)>;
-            low-power-enable;
-        };
-    };
-};
-
 &pro_micro_i2c {
     status = "okay";
 
